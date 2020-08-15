@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_item"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:maxHeight="@dimen/max_height_news_item"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardCornerRadius="@dimen/corner_card_news"
+        app:cardElevation="@dimen/elevation_card_news" >
+
+        <LinearLayout
+            android:id="@+id/container_content_news"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/im_item_news"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/img_height" />
+            <TextView
+                android:id="@+id/tv_item_news_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/title_example"
+                android:textStyle="bold"
+                android:textSize="@dimen/size_text_item_title"
+                android:layout_marginTop="@dimen/mrg_top_default_item_text" />
+            <TextView
+                android:id="@+id/tv_item_news_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/description_example"
+                android:textSize="@dimen/size_text_item_description"
+                android:layout_marginTop="@dimen/mrg_top_default_item_text" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

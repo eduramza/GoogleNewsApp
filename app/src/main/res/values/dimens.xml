@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="padding_item">20dp</dimen>
+    <dimen name="max_height_news_item">320dp</dimen>
+    <dimen name="corner_card_news">8dp</dimen>
+    <dimen name="elevation_card_news">16dp</dimen>
+    <dimen name="img_height">180dp</dimen>
+    <dimen name="size_text_item_title">22sp</dimen>
+    <dimen name="mrg_top_default_item_text">10dp</dimen>
+    <dimen name="size_text_item_description">18sp</dimen>
+</resources>
