@@ -2,11 +2,12 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:padding="@dimen/padding_item"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/card_news"
         android:layout_width="match_parent"
         android:layout_height="320dp"
         android:maxHeight="@dimen/max_height_news_item"
@@ -14,7 +15,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:cardCornerRadius="@dimen/corner_card_news"
-        app:cardElevation="@dimen/elevation_card_news" >
+        app:cardElevation="@dimen/elevation_card_news"
+        android:clickable="true"
+        android:elevation="@dimen/elevation_card_news">
 
         <LinearLayout
             android:id="@+id/container_content_news"
@@ -33,6 +36,9 @@
                 android:text="@string/title_example"
                 android:textStyle="bold"
                 android:textSize="@dimen/size_text_item_title"
+                android:layout_marginEnd="@dimen/mrg_text_item"
+                android:layout_marginStart="@dimen/mrg_text_item"
+                android:maxLines="3"
                 android:layout_marginTop="@dimen/mrg_top_default_item_text" />
             <TextView
                 android:id="@+id/tv_item_news_description"
@@ -40,6 +46,9 @@
                 android:layout_height="wrap_content"
                 android:text="@string/description_example"
                 android:textSize="@dimen/size_text_item_description"
+                android:layout_marginStart="@dimen/mrg_text_item"
+                android:layout_marginEnd="@dimen/mrg_text_item"
+                android:maxLines="2"
                 android:layout_marginTop="@dimen/mrg_top_default_item_text" />
         </LinearLayout>
 

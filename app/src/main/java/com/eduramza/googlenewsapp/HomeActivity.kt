@@ -2,7 +2,7 @@ package com.eduramza.googlenewsapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.eduramza.googlenewsapp.ui.main.HomeFragment
+import com.eduramza.googlenewsapp.ui.home.HomeFragment
 
 class HomeActivity : AppCompatActivity() {
 
